@@ -1,0 +1,15 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "better_storage:block/data_hardware_front"
+	},
+	"elements": [
+		{
+			"from": [8.33333, 0.66667, 1.3333],
+			"to": [11.66663, 7.66667, 1.3333],
+			"faces": {
+				"north": {"uv": [0, 0, 7.61905, 16], "texture": "#1"}
+			}
+		}
+	]
+}
