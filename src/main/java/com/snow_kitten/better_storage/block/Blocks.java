@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 public class Blocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BetterStorage.MODID);
 
-    public static final RegistryObject<Block> DATA_HARDWARE = BLOCKS.register("data_hardware",
+    public static final RegistryObject<Block> DATA_HARDWARE = registerBlock("data_hardware",
             () -> new DataHardwareBlock(BlockBehaviour.Properties.of(Material.STONE)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -32,6 +32,6 @@ public class Blocks {
     }
 
     public static void register(IEventBus bus) {
-        bus.register(BLOCKS);
+        BLOCKS.register(bus);
     }
 }

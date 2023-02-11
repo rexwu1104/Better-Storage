@@ -15,6 +15,6 @@ public class Items {
     public static final RegistryObject<Item> DATA_CARD_128_ITEM = ITEMS.register("data_card_128", DataCard_128::new);
 
     public static void register(IEventBus bus) {
-        bus.register(ITEMS);
+        ITEMS.register(bus);
     }
 }
