@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/cube",
 	"textures": {
 		"0": "better_storage:block/cable",
 		"particle": "better_storage:block/cable"

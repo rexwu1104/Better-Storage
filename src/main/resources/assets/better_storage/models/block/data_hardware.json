@@ -6,7 +6,7 @@
 		"1": "better_storage:block/data_hardware_side",
 		"3": "better_storage:block/data_hardware_front_panel",
 		"4": "better_storage:block/data_hardware_inside",
-		"particle": "better_storage:block/data_hardware_front_panel"
+		"particle": "better_storage:block/data_hardware_side"
 	},
 	"elements": [
 		{

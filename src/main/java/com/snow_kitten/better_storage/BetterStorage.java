@@ -43,6 +43,7 @@ public class BetterStorage
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == CreativeModeTab.BETTER_STORAGE_TAB) {
             event.accept(Blocks.DATA_HARDWARE);
+            event.accept(Blocks.DATA_CABLE);
             event.accept(Items.DATA_CARD_128_ITEM);
         }
     }

@@ -17,6 +17,11 @@ public class BlockEntities {
                 BlockEntityType.Builder.of(DataHardwareBlockEntity::new,
                     Blocks.DATA_HARDWARE.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<DataCableBlockEntity>> DATA_CABLE_ENTITY =
+            BLOCK_ENTITIES.register("data_cable_entity", () ->
+                    BlockEntityType.Builder.of(DataCableBlockEntity::new,
+                            Blocks.DATA_CABLE.get()).build(null));
+
     public static void register(IEventBus bus) {
         BLOCK_ENTITIES.register(bus);
     }

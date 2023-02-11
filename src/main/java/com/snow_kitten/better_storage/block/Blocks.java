@@ -1,6 +1,7 @@
 package com.snow_kitten.better_storage.block;
 
 import com.snow_kitten.better_storage.BetterStorage;
+import com.snow_kitten.better_storage.block.custom.DataCableBlock;
 import com.snow_kitten.better_storage.block.custom.DataHardwareBlock;
 import com.snow_kitten.better_storage.item.Items;
 import net.minecraft.world.item.BlockItem;
@@ -20,6 +21,9 @@ public class Blocks {
 
     public static final RegistryObject<Block> DATA_HARDWARE = registerBlock("data_hardware",
             () -> new DataHardwareBlock(BlockBehaviour.Properties.of(Material.STONE)));
+
+    public static final RegistryObject<Block> DATA_CABLE = registerBlock("data_cable_center",
+            () -> new DataCableBlock(BlockBehaviour.Properties.of(Material.METAL)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
